@@ -1,14 +1,15 @@
 import crypto from "crypto"
 
 class CharacterEntity {
-    constructor(character, userId) {
+    constructor(char, userId) {
         this.id = character.id ?? crypto.randomUUID()
         this.name = character.name
         this.image = character.image
         this.userId = userId
     }
 
-    getCharatter() {
+    //retorna o objeto do character
+    getCharacter() {
         return {
             id: this.id,
             name: this.name,

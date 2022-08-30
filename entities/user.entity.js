@@ -31,6 +31,8 @@ class UserEntity {
             image: this.image,
             characters: this.characters
         }
+
+        
     }
 }
 
